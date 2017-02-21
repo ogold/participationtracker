@@ -29,6 +29,17 @@
     #myTitle {
       margin-top: 40px;
     }
+    #toggle {
+      margin-right: 500px;
+    }
+    #finish {
+      color: black;
+    }
+    #graphz {
+      margin-top: 25px;
+      width: 700px;
+      height: 400px;
+    }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -80,7 +91,11 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 id="myTitle">Class Summary</h1>
-                <p class="lead">UNDER CONTRUCTION</p>
+                <img id="graphz" src="1.png"></img>
+                <div class="row" id="toggle">
+                <a href="summary.html" id ="finish"><button> Today's Session</button></a>
+                <a href="summaryt.html" id ="finish"><button> Average </button></a>
+              </div>
             </div>
         </div>
         <!-- /.row -->
@@ -90,6 +105,7 @@
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
