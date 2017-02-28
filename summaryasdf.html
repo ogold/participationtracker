@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
     <title>Participation App</title>
 
     <!-- Bootstrap Core CSS -->
@@ -17,7 +18,7 @@
     <!-- Custom CSS -->
     <style>
     body {
-        background-color:  #edf0f4;
+        background-color: #edf0f4;
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
@@ -29,6 +30,17 @@
     #myTitle {
       margin-top: 40px;
       font-weight: normal;
+    }
+    #finish {
+      color: black;
+    }
+    #toggle {
+      margin-right: 500px;
+    }
+    #graphz {
+      margin-top: 25px;
+      width: 700px;
+      height: 400px;
     }
     </style>
 
@@ -80,9 +92,11 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 id="myTitle">Welcome to Participation Tracker</h1>
-                <p class="lead">We hope this app serves as an aid in your classroom.</p>
-                <img src="classpic.jpg"></img>
+                <h1 id="myTitle">Average Participation</h1>
+                <img id="graphz" src="2.png"></img>
+                <div class="row" id="toggle">
+                <a href="summary.html" id ="finish"><button> Today's Session </button></a>
+                <a href="summarym.html" id ="finish"><button> Average </button></a>
             </div>
         </div>
         <!-- /.row -->
@@ -92,7 +106,6 @@
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

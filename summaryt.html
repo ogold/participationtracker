@@ -3,17 +3,18 @@
 
 <head>
     <script src="script.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
     <title>Participation App</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Custom CSS -->
     <style>
@@ -29,17 +30,18 @@
     }
     #myTitle {
       margin-top: 40px;
+      font-weight: normal;
     }
     #finish {
       color: black;
-    }
-    #toggle {
-      margin-right: 500px;
     }
     #graphz {
       margin-top: 25px;
       width: 700px;
       height: 400px;
+    }
+    .togglebutton {
+      width: 500px;
     }
     </style>
 
@@ -91,11 +93,42 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 id="myTitle">Class Summary</h1>
-                <img id="graphz" src="2.png"></img>
-                <div class="row" id="toggle">
-                <a href="summary.html" id ="finish"><button> Today's Session </button></a>
-                <a href="summaryt.html" id ="finish"><button> Average </button></a>
+                <h1 id="myTitle">Class Average</h1>
+                <ul class="chart">
+
+	<li class="bar teal" style="height: 37%;" title="95">
+<div class="skill">Bobby C.</div></li>
+	<li class="bar salmon" style="height: 24%;" title="90">
+<div class="skill">Bobby P.</div></li>
+	<li class="bar peach" style="height: 63%;" title="80">
+<div class="skill">Nikit B.</div></li>
+	<li class="bar lime" style="height: 42%;" title="75">
+<div class="skill">Ori G.</div></li>
+	<li class="bar grape" style="height: 100%;" title="40">
+<div class="skill">Daanish K.</div></li>
+  <li class="bar teal" style="height: 34%;" title="95">
+<div class="skill">Homer S.</div></li>
+	<li class="bar salmon" style="height: 55%;" title="90">
+<div class="skill">Carl G.</div></li>
+	<li class="bar peach" style="height: 17%;" title="80">
+<div class="skill">Daryl D.</div></li>
+	<li class="bar lime" style="height: 23%;" title="75">
+<div class="skill">Ted M.</div></li>
+	<li class="bar grape" style="height: 47%;" title="40">
+<div class="skill">Frank U.</div></li>
+  <li class="bar teal" style="height: 63%;" title="95">
+<div class="skill">Ross G.</div></li>
+	<li class="bar salmon" style="height: 64%;" title="90">
+<div class="skill">Rovik R.</div></li>
+	<li class="bar peach" style="height: 89%;" title="80">
+<div class="skill">Joey T.</div></li>
+	<li class="bar lime" style="height: 72%;" title="75">
+<div class="skill">Philip G.</div></li>
+</ul>
+<div class="row text-center" id="toggle">
+  <a href="summary.html" id ="finish"><button class="togglebutton"> Today's Session</button></a>
+  <a href="summaryt.html" id ="finish"><button class="togglebutton"> Class Average </button></a>
+</div>
             </div>
         </div>
         <!-- /.row -->
@@ -105,6 +138,8 @@
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
+
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

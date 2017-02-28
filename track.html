@@ -41,6 +41,17 @@
     }
     #myTitle {
       margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+    .studentName {
+      text-align: left;
+    }
+    .col-md-6 {
+      overflow-y: scroll;
+      height: 300px;
+      width: inherit;
+      margin-bottom: 20px;
     }
     </style>
 
@@ -93,42 +104,150 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1 id="myTitle">Track Participation</h1>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6 text-center">
                   <table id ="classTable" class="table table-hover">
                                   <thead>
                                       <tr>
-                                          <th class="swag">-</th>
-                                          <th class="swag">Name</th>
+                                          <th class="swag" style="text-align:left">Name</th>
+                                          <th class="swag">Decrease Count</th>
+                                          <th class="swag">Increase Count</th>
                                           <th class="swag">Participation Count</th>
-                                          <th class="swag">+</th>
                                       </tr>
                                   </thead>
                                   <tbody>
                                       <tr>
+                                          <td class="studentName">Bobby P.</td>
                                           <td><button id = "1minus" onClick="minus(this.id)">-</button></td>
-                                          <td>Bobby P.</td>
-                                          <td id = "1">0</td>
                                           <td><button id = "1plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "1">0</td>
                                       </tr>
                                       <tr>
+                                          <td class="studentName">Bobby C.</td>
                                           <td><button id = "2minus" onClick="minus(this.id)">-</button></td>
-                                          <td>Bobby C.</td>
-                                          <td id = "2">0</td>
                                           <td><button id = "2plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "2">0</td>
                                       </tr>
                                       <tr>
+                                          <td class="studentName">Nikit B.</td>
                                           <td><button id = "3minus" onClick="minus(this.id)">-</button></td>
-                                          <td>Nikit B.</td>
-                                          <td id = "3">0</td>
                                           <td><button id = "3plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "3">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Homer S.</td>
+                                          <td><button id = "4minus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "4plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "4">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Prannay S.</td>
+                                          <td><button id = "5minus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "5plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "5">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Ori G.</td>
+                                          <td><button id = "6minus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "6plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "6">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Marge S.</td>
+                                          <td><button id = "7minus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "7plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "7">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Carl G.</td>
+                                          <td><button id = "8minus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "8plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "8">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Daryl D.</td>
+                                          <td><button id = "9minus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "9plus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "9">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Ned F.</td>
+                                          <td><button id = "Aminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Aplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "A">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Philip G.</td>
+                                          <td><button id = "Bminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Bplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "B">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Rick G.</td>
+                                          <td><button id = "Cminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Cplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "C">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Bart S.</td>
+                                          <td><button id = "Cminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Cplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "C">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Rovik R.</td>
+                                          <td><button id = "Dminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Dplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "D">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Ted M.</td>
+                                          <td><button id = "Eminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Eplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "E">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Ross G.</td>
+                                          <td><button id = "Fminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Fplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "F">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Gregory H.</td>
+                                          <td><button id = "Gminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Gplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "G">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Frank U.</td>
+                                          <td><button id = "Hminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Hplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "H">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Pablo E.</td>
+                                          <td><button id = "Iminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Iplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "I">0</td>
+                                      </tr>
+                                      <tr>
+                                          <td class="studentName">Joey T.</td>
+                                          <td><button id = "Jminus" onClick="minus(this.id)">-</button></td>
+                                          <td><button id = "Jplus" onClick="plus(this.id)">+</button></td>
+                                          <td id = "J">0</td>
                                       </tr>
                                   </tbody>
                               </table>
-            <a href="summary.html" id ="finish"> <button> Finish Session </button> </a>
+                            </div>
+                          </div>
+                            <div class="col-md-3">
+                            </div>
             </div>
-
-        </div>
         <!-- /.row -->
-
+        <div class="row text-center">
+        <a href="summary.html" id ="finish"> <button> Finish Session </button> </a>
+      </div>
     </div>
     <!-- /.container -->
 

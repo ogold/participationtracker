@@ -16,7 +16,6 @@ function minus(x) {
 
 
 function addStudent() {
-    if (document.getElementById("textentry").value != "") {
     var textnode = document.createTextNode(document.getElementById("textentry").value);
     var node = document.createElement("div");
     var checkbox = document.createElement("input");
@@ -26,7 +25,6 @@ function addStudent() {
     y = x + "num";
     z = x + "dex";
     node.className = "checkbox"
-    node.align = "left";
     checkbox.type = "checkbox";
     checkbox.value = "";
     checkbox.className = "checkz";
@@ -36,9 +34,8 @@ function addStudent() {
     localStorage.setItem(x, document.getElementById("textentry").value);
     localStorage.setItem(y, x);
     localStorage.setItem(z, node);
-    document.getElementById("lastLine").appendChild(node);
+    document.getElementById("myClass").appendChild(node);
     document.getElementById("textentry").value = "";
-  }
 }
 
 function listz() {
